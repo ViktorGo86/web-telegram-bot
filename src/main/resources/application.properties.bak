@@ -1,0 +1,7 @@
+bot.name=SpringGoBot
+bot.token=5547440321:AAHGFz6pzOFfGJw672JpSYoa5LWxcAd1i6I
+spring.datasource.driverClassName=org.postgresql.Driver
+spring.datasource.url=jdbc:postgresql://localhost:5432/telegrambd
+spring.datasource.username=postgres
+spring.datasource.password=V!kt0r1986
+

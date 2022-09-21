@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5acfa36c-04af-440e-89cb-d5519545356f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/proj3ct/SpringGoBot/dao/impl/BotAnswersDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/proj3ct/SpringGoBot/dao/impl/BotAnswersDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/proj3ct/SpringGoBot/dao/impl/BotAnswersRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/proj3ct/SpringGoBot/dao/impl/BotAnswersRowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/proj3ct/SpringGoBot/dao/impl/BotQuestionsDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/proj3ct/SpringGoBot/dao/impl/BotQuestionsDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/proj3ct/SpringGoBot/model/BotAnswers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/proj3ct/SpringGoBot/model/BotAnswers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/proj3ct/SpringGoBot/service/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/proj3ct/SpringGoBot/service/TelegramBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/proj3ct/SpringGoBot/service/TelegramBot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/proj3ct/SpringGoBot/service/TelegramBot.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2BqHLiwoWObnucfJuKR2v0pB0Zv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../web_app" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.3218391" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\REPS_JAVA\my-project-gnidenko\SpringGoBot\src\main\java\io\proj3ct\SpringGoBot\dao\impl" />
+      <recent name="C:\REPS_JAVA\my-project-gnidenko\SpringGoBot\src\main\java\io\proj3ct\SpringGoBot\dao" />
+      <recent name="C:\REPS_JAVA\my-project-gnidenko\SpringGoBot\src\main\java\io\proj3ct\SpringGoBot\model" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.proj3ct.SpringGoBot.dao.impl" />
+      <recent name="io.proj3ct.SpringGoBot.dao" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SpringGoBotApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SpringGoBot" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.proj3ct.SpringGoBot.SpringGoBotApplication" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="showInfrastructureBeans" value="false" />
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5acfa36c-04af-440e-89cb-d5519545356f" name="Changes" comment="" />
+      <created>1657626647873</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657626647873</updated>
+      <workItem from="1657626653309" duration="1163000" />
+      <workItem from="1657627840682" duration="192000" />
+      <workItem from="1657628046360" duration="621000" />
+      <workItem from="1657632496251" duration="709000" />
+      <workItem from="1657633226323" duration="729000" />
+      <workItem from="1657634038054" duration="9000" />
+      <workItem from="1657697134948" duration="2059000" />
+      <workItem from="1657699233781" duration="2856000" />
+      <workItem from="1657702165262" duration="28000" />
+      <workItem from="1657705071639" duration="123000" />
+      <workItem from="1657705215567" duration="2029000" />
+      <workItem from="1657773688496" duration="3049000" />
+      <workItem from="1657805724137" duration="537000" />
+      <workItem from="1657806288414" duration="4275000" />
+      <workItem from="1657811447263" duration="9000" />
+      <workItem from="1657860592576" duration="132000" />
+      <workItem from="1657860842252" duration="1322000" />
+      <workItem from="1657862481244" duration="725000" />
+      <workItem from="1657863234463" duration="9000" />
+      <workItem from="1657863272533" duration="223000" />
+      <workItem from="1657863517171" duration="214000" />
+      <workItem from="1657863819576" duration="9000" />
+      <workItem from="1657863851986" duration="215000" />
+      <workItem from="1657864150415" duration="240000" />
+      <workItem from="1657865398157" duration="1334000" />
+      <workItem from="1657889983094" duration="509000" />
+      <workItem from="1657955550331" duration="1938000" />
+      <workItem from="1657978573144" duration="6000" />
+      <workItem from="1658041374481" duration="1939000" />
+      <workItem from="1658043348138" duration="19574000" />
+      <workItem from="1658119973335" duration="653000" />
+      <workItem from="1658314229233" duration="3468000" />
+      <workItem from="1658346116994" duration="1761000" />
+      <workItem from="1658347902836" duration="14000" />
+      <workItem from="1658347924106" duration="76000" />
+      <workItem from="1658349745640" duration="50000" />
+      <workItem from="1658381031608" duration="668000" />
+      <workItem from="1658723176722" duration="10000" />
+      <workItem from="1658730684135" duration="105000" />
+      <workItem from="1659009420154" duration="2607000" />
+      <workItem from="1663498898517" duration="2216000" />
+      <workItem from="1663597678209" duration="32000" />
+      <workItem from="1663597725651" duration="270000" />
+      <workItem from="1663598230687" duration="1800000" />
+      <workItem from="1663651376291" duration="1810000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
