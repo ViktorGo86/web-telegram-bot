@@ -7,6 +7,5 @@ import java.util.List;
 public interface BotQuestionsDAO {
 
     public abstract List<BotQuestions> selectBotQuestions();
-    public abstract List<BotQuestions> getBotQuestions(Integer id);
 
 }

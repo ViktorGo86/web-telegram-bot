@@ -14,7 +14,6 @@ public class BotAnswersRowMapper implements RowMapper<BotAnswers> {
         botAnswers.setId(rs.getInt("id"));
         botAnswers.setQuestionId(rs.getLong("question_id"));
         botAnswers.setNameAnswer(rs.getString("name_answer"));
-        //botAnswers.setCorrectAnswer(rs.getInt("correct_answer"));
         botAnswers.setCorrectAnswer(rs.getBoolean("correct_answer"));
         botAnswers.setDescription(rs.getString("description"));
         botAnswers.setEnabled(rs.getBoolean("enabled"));

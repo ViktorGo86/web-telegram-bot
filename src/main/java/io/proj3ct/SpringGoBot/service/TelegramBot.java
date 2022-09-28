@@ -10,7 +10,6 @@ import io.proj3ct.SpringGoBot.model.BotMessage;
 import io.proj3ct.SpringGoBot.model.BotQuestions;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.commands.SetMyCommands;
@@ -73,23 +72,10 @@ public class TelegramBot extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
 
-        // Вывод Лога пользователя
-      /*  System.out.println(update);
-        Message mes = update.getMessage();
-        Integer messageId = mes.getMessageId();
-        String text = mes.getText();
-        User user = mes.getFrom();
-        System.out.println("user_id: " + user.getId()+ " messageId: "+messageId +" User_Name: "+user.getFirstName()+" User_username: "+user.getUserName()+" message: " + text);
-
-        // Записываем данные в БД
-        insertBotMessage( user.getId(), messageId, user.getFirstName(), user.getUserName(), text);*/
-
-
         List<BotQuestions> botQues = botQuestionsDAO.selectBotQuestions();
         Collections.shuffle(botQues);
         for (BotQuestions recQues : botQues) {
             String NameQuestion = recQues.getNameQuestion();
-            //System.out.println("botQues = "+NameQuestion);
             Long pAnswersId = Long.valueOf(recQues.getId());
             if (update.hasMessage()) {
                 handleQuestions(update.getMessage(), pAnswersId, NameQuestion);
@@ -132,14 +118,6 @@ public class TelegramBot extends TelegramLongPollingBot {
         botMessageDAO.insertBotMessage(botmessage);
     }
 
-    /*private void selectBotMessageBy() {
-        List<BotMessage> botMes = botMessageDAO.selectBotMessage();
-        System.out.println("*****************************");
-        for (BotMessage record : botMes) {
-            System.out.println(record.getNameFull());
-        }
-    }*/
-
     private void startCommandReceived(long chatId, String name){
         String answer = "Привет, " + name +", меня зовут SpringGoBot, рад знакомству!";
         sendMessage(chatId, answer);
@@ -165,7 +143,6 @@ public class TelegramBot extends TelegramLongPollingBot {
         String text = mes.getText();
         User user = mes.getFrom();
         System.out.println("user_id: " + user.getId() + " messageId: " + messageId + " User_Name: " + user.getFirstName() + " User_username: " + user.getUserName() + " message: " + text);
-        // Записываем данные в БД
         insertBotMessage(user.getId(), messageId, user.getFirstName(), user.getUserName(), text);
     }
 
@@ -183,7 +160,6 @@ public class TelegramBot extends TelegramLongPollingBot {
                                 .substring(commandEntity.get().getOffset(), commandEntity.get().getLength());
                 switch (command) {
                     case "/set_questions":
-                        //List<List<InlineKeyboardButton>> buttons = new ArrayList<>();
                         List<InlineKeyboardButton> buttons = new ArrayList<>();
                         int row = 0;
                         String pNameAnswer = "";
@@ -191,19 +167,15 @@ public class TelegramBot extends TelegramLongPollingBot {
                             row = row + 1;
                             System.out.println(row);
                             pNameAnswer = pNameAnswer + "\n" + row+". "+record.getNameAnswer();
-                            //System.out.println(record.getCorrectAnswer());
-                            //System.out.println("ANSWERS_" + record.getCorrectAnswer());
                             System.out.println(record.getNameAnswer());
                             System.out.println(record.isCorrectAnswer());
                             System.out.println("ANSWERS_" + record.isCorrectAnswer());
-                            //buttons.add(
                             buttons.addAll(
                                     Arrays.asList(
                                             InlineKeyboardButton
                                                     .builder()
                                                     .text(String.valueOf(row))
-                                                    //.text(record.getNameAnswer())
-                                                    .callbackData("ANSWERS_" + record.isCorrectAnswer())//.callbackData("ANSWERS_" + record.getCorrectAnswer())
+                                                    .callbackData("ANSWERS_" + record.isCorrectAnswer())
                                                     .build()
                                     )
                             );
@@ -214,19 +186,16 @@ public class TelegramBot extends TelegramLongPollingBot {
                                         .text(NameQuestion + "\n" + pNameAnswer)
                                         .chatId(message.getChatId().toString())
                                         .replyMarkup(InlineKeyboardMarkup.builder().keyboardRow(buttons).build())
-                                        // .replyMarkup(InlineKeyboardMarkup.builder().keyboard(buttons).build())
-
                                         .build());
                         return;
-                } //switch (command)
-            }//if (commandEntity.isPresent())
+                }
+            }
         }
     }
     @SneakyThrows
     private void callbackQuestions(CallbackQuery callbackQuery) {
         Message message = callbackQuery.getMessage();
         String data = callbackQuery.getData();
-        //User user = callbackQuery.getFrom();
         System.out.println(data);
         if (data.equals("ANSWERS_true")) {
             System.out.println("✅ Правильный ответ!");

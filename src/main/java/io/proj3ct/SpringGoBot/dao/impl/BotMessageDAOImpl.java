@@ -6,17 +6,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
-
 @Repository
 public class BotMessageDAOImpl implements BotMessageDAO {
+
+    String INSERT_BOTMESSAGE_SQL = "INSERT INTO bot_messages(user_id, message_id, name_user, name_full, message) VALUES(?,?,?,?,?)";
 
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
     @Override
     public void insertBotMessage(BotMessage botmessage) {
-        String INSERT_BOTMESSAGE_SQL = "INSERT INTO bot_messages(user_id, message_id, name_user, name_full, message) VALUES(?,?,?,?,?)";
         int update = jdbcTemplate.update(INSERT_BOTMESSAGE_SQL,
                 botmessage.getUserId(),
                 botmessage.getMessageId(),
@@ -29,11 +28,4 @@ public class BotMessageDAOImpl implements BotMessageDAO {
         }
     }
 
-    @Override
-    public List<BotMessage> selectBotMessage() {
-        String SELECT_BOTMESSAGE_SQL="SELECT * FROM bot_messages";
-        List<BotMessage> botMessage = jdbcTemplate.query(SELECT_BOTMESSAGE_SQL, new BotMessageRowMapper());
-        return botMessage;
-
-    }
 }

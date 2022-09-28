@@ -5,7 +5,6 @@ public class BotAnswers {
     private Integer id;
     private Long questionId;
     private String nameAnswer;
-    //private Integer correctAnswer;
     private boolean correctAnswer;
     private String description;
     private boolean enabled;
@@ -33,14 +32,6 @@ public class BotAnswers {
     public void setNameAnswer(String nameAnswer) {
         this.nameAnswer = nameAnswer;
     }
-
-    /*public Integer  getCorrectAnswer() {
-        return correctAnswer;
-    }
-
-    public void setCorrectAnswer(Integer  correctAnswer) {
-        this.correctAnswer = correctAnswer;
-    }*/
 
     public boolean isCorrectAnswer() {
         return correctAnswer;
